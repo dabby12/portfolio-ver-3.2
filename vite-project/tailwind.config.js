@@ -1,0 +1,44 @@
+module.exports = {
+  content: [
+    './src/**/*.{html,js,jsx,ts,tsx}', // Make sure Tailwind knows about your JSX files
+  ],
+  theme: {
+    extend: {
+      animation: {
+        'fade-up': 'fadeUp 1s ease-out forwards',
+        'slide-up': 'slideUp 1s ease-out forwards',
+        'scale-up': 'scaleUp 0.5s ease-out forwards',
+        'scale-down': 'scaleDown 0.5s ease-out forwards',
+        'slide-right': 'slideRight 1s ease-out forwards',
+        'slide-left': 'slideLeft 1s ease-out forwards',
+      },
+      keyframes: {
+        fadeUp: {
+          '0%': { opacity: 0, transform: 'translateY(20px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+        slideUp: {
+          '0%': { opacity: 0, transform: 'translateY(20px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+        scaleUp: {
+          '0%': { transform: 'scale(0.9)', opacity: 0 },
+          '100%': { transform: 'scale(1)', opacity: 1 },
+        },
+        scaleDown: {
+          '0%': { transform: 'scale(1)', opacity: 1 },
+          '100%': { transform: 'scale(0.9)', opacity: 0 },
+        },
+        slideRight: {
+          '0%': { transform: 'translateX(-100%)', opacity: 0 },
+          '100%': { transform: 'translateX(0)', opacity: 1 },
+        },
+        slideLeft: {
+          '0%': { transform: 'translateX(100%)', opacity: 0 },
+          '100%': { transform: 'translateX(0)', opacity: 1 },
+      },
+      }
+    },
+  },
+  plugins: [],
+}
