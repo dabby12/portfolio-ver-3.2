@@ -7,6 +7,7 @@ import Sidebar from "./components/Sidebar/Sidebar"; // Keep the Sidebar
 import Testimonials from "./components/Testimonials/Testimonials"; // Import the Testimonials component
 import Awards from "./components/AwardsAndRecognitions/Awards"
 import Contact from "./components/Contact/Contact";
+import Works from "./components/Works/Works"
 const App = () => {
   return (
     <Router>
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/testimonials" element={<Testimonials />} /> {/* New route for Testimonials */}
             <Route path="/awards" element={<Awards />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/works" element ={<Works />} />
           </Routes>
         </div>
       </div>
