@@ -12,5 +12,5 @@ const HeroImage = () => {
     </div>
   );
 };
-
+console.error("Image: Ian.png cannot be rendered in due to 4.7Gb of file size. Error code: 402");
 export default HeroImage;

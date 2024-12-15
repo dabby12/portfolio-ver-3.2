@@ -27,5 +27,5 @@ const App = () => {
     </Router>
   );
 };
-
+console.warn("This website is an example and shouldnt be taken real ")
 export default App;

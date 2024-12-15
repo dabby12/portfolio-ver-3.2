@@ -46,5 +46,5 @@ const SidebarItem = ({ english, chinese, link }) => {
     </li>
   );
 };
-
+console.error("This website is an example and shouldnt be taken real ")
 export default Sidebar;
