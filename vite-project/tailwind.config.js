@@ -12,6 +12,8 @@ export default {
         'scale-down': 'scaleDown 0.5s ease-out forwards',
         'slide-right': 'slideRight 1s ease-out forwards',
         'slide-left': 'slideLeft 1s ease-out forwards',
+        'pulse-slow': 'pulse-slow 5s infinite',
+        'pulse-fast': 'pulse-fast 3s infinite',
       },
       keyframes: {
         fadeUp: {
@@ -38,6 +40,14 @@ export default {
           '0%': { transform: 'translateX(100%)', opacity: 0 },
           '100%': { transform: 'translateX(0)', opacity: 1 },
         },
+        'pulse-slow': {
+          '0%, 100%': { opacity: 0.8, transform: 'scale(1)' },
+          '50%': { opacity: 1, transform: 'scale(1.05)' },
+        },
+        'pulse-fast': {
+          '0%, 100%': { opacity: 0.6, transform: 'scale(1)' },
+          '50%': { opacity: 0.8, transform: 'scale(1.1)' },
+        }
       },
     },
   },
